@@ -9,11 +9,11 @@
 
 
 
-<?php
+
 //my first php page
 phpinfo();
 
-?>
+
 
 </body>
 
