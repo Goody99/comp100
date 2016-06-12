@@ -19,6 +19,7 @@
                 <label for="type">Type:</label>
                 <input name="type"/>
             </fieldset>
+            <button type="submit">save</button>
 
         </form>
     </body>
