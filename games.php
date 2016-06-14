@@ -4,22 +4,6 @@
         <meta content="text/html"; charset="utf-8" http-equiv="content-type">
         <title> video games site </title>
     </head>
-    <?php
-
-    // Create connection
-    try {
-        $conn = new PDO("mysql:host=$sql.computerstudi.es;dbname=games", $gc200325390, $DBjvinA?);
-        // set the PDO error mode to exception
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo "Connected successfully";
-    }
-    catch(PDOException $e)
-    {
-        echo "Connection failed: " . $e->getMessage();
-    }
-    ?>
-        
-
     <body>
         <h1>Game details</h1>
         <form action="save-game.php"method="post">
