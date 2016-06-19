@@ -67,6 +67,10 @@ list($name1, $name2, $name3) = $band_members;
                     <h3>Band Founded Date</h3>
                     <p>
                         <!-- Output PHP variable for Band Founded Date -->
+                        <?php
+                        $band_founded_date = date_create('2000-01-01');
+                        echo date_format($date, 'Y-m-d H:i:s');
+                        ?>
                     </p>
                 </div>
             </div>
