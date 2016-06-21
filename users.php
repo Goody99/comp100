@@ -1,21 +1,3 @@
-<?php
-
-  /* Step 1 - Connect to the database */
-
-$dbh = new PDO('mysql:host=gc200325390.computerstudi.es;dbname=gc200325390', 'gc200325390', 'DBjvinA?');
-
-
-  // Build the SQL sentence
-  $sql = 'SELECT term1_users.id, term1_users.first_name, term1_users.last_name, term1_users.date_of_birth, term1_cities.name as city FROM term1_users JOIN term1_cities ON term1_cities.id = term1_users.city_id';
-
-
-  /* Step 2 - Prepare, Execute, and Fetch the results and store them in a variable named $users */
-
-/* Execute a prepared statement by passing an array of values */
-
-$sth = $dbh->prepare($sql, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
-$sth->execute();
-$users = $sth->fetchAll();
 
 
 
