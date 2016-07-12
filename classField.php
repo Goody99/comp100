@@ -13,6 +13,7 @@ class HTMLBuilder{
 //instantiated object
 $select= new HTMLBuilder;
 echo $select->selectBox('cities',['orillia','Barrie']);
+$select= new HTMLBuilder;
 echo $select->selectBox('cars',['Ferrari','Porsche']);
 ?>
 
