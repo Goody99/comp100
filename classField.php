@@ -14,6 +14,4 @@ class HTMLBuilder{
 $select= new HTMLBuilder;
 echo $select->selectBox('cities',['orillia','Barrie']);
 $select= new HTMLBuilder;
-echo $select->selectBox('cars',['Ferrari','Porsche']);
-?>
-
+echo $select->selectBox('provinces',['ON','QC']);
