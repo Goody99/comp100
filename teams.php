@@ -11,7 +11,7 @@
 <!-- This is a Bootstrap container. Get more info at http://getbootstrap.com/ -->
 <div class="container">
     <section>
-        <form>
+        <form action = "Add_team.php" method="post">
             <fieldset>
                 <legend>Team information</legend>
                 <div>
