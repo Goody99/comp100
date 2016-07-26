@@ -5,7 +5,7 @@ $team_name = $_POST['name'];
 $team_category = $_POST['team_category'];
 $website= $_POST['website'];
 // connection to database
-$dbh = new PDO("mysql:host=localhost;dbname=dbteams","root","Ilhamovich99");
+$dbh = new PDO("mysql:host=dreamhost;dbname=teams","gc200325390","DBjvinA?");
 $dbh->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 //Build the SQL
@@ -23,5 +23,5 @@ $sth ->bindParam(':website',$website, PDO::PARAM_STR,100);
 $sth->execute();
 
 // close our connection
-$dbh= null;
+$dbh = null;
 ?>
