@@ -5,7 +5,7 @@ $team_name = $_POST['name'];
 $team_category = $_POST['team_category'];
 $website= $_POST['website'];
 // connection to database
-$dbh = new PDO("mysql:localhost=Local_instance_MYSQL57;dbname=dbteams","root","ilhamovich99");
+$dbh = new PDO("mysql:host=localhost;dbname=dbteams","root","ilhamovich99");
 $dbh->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 //Build the SQL
