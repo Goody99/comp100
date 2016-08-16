@@ -14,7 +14,10 @@
 
                     require_once 'employee.php';
                     $Abdel = new Employee( 'Abdel', 'Lahna', '1979-12-16','1300');
+                    $echo( $Abdel->age() );
                     $echo( $Abdel->net_income() );
+
+
 
                 ?>
 
